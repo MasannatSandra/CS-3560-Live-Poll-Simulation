@@ -51,7 +51,6 @@ public class VotingService extends Student {
         System.out.println(isRight +" students have selected 1. Right.");
         System.out.println(isWrong +" students have selected 2. Wrong.\n");
     }
-
     public void amongUsAns(char option){ //Define answers and check correctness
         if(option=='A'){ //conditions
             System.out.println("Sorry you are incorrect!");
@@ -71,6 +70,7 @@ public class VotingService extends Student {
         }
         else if(option=='C'){
             System.out.println("Nice! You are correct!");
+            optionC++;
         }
     }
     public void amongUsStat(){ //overall stat for q2
@@ -125,7 +125,7 @@ public class VotingService extends Student {
         System.out.println(optionB + " students have selected B. Reformation");
         System.out.println(optionC + " students have selected C. Forever 21");
         System.out.println(optionD + " students have selected D. Levi's");
-        System.out.println(optionE +" students have selected  E. Uniqlo");
+        System.out.println(optionE + " students have selected E. Uniqlo");
         //reset variables to 0 so it doesn't save for future methods
         optionA=0;
         optionB=0;
@@ -136,6 +136,9 @@ public class VotingService extends Student {
         incorrect=0;
     }
     public void fruitAns(ArrayList Choices){ //can select multiple choices hence arraylist
+        if(Choices.contains("A")){
+            optionA++;
+        }
         if(Choices.contains("B")){ //conditions
             optionB++;
         }
