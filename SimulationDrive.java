@@ -43,7 +43,6 @@ public class SimulationDrive {
             //Print what they choose
             System.out.println(students.getNames() + " choose " + students.getAnswer() );
             ivote.amongUsAns(students.getAnswer()); //Check if students was correct or not
-
         }
         System.out.println();
         ivote.amongUsStat(); //overall stat for that q
@@ -58,7 +57,6 @@ public class SimulationDrive {
             //Print what they choose
             System.out.println(students.getNames() + " choose " + students.getMCS());
             ivote.fastFashionAns(students.getMCS());  //Check if students were correct or not     
-
         }
         System.out.println();
         ivote.FastFashionStat(); //overall stat for that q
