@@ -1,14 +1,13 @@
 package simulationdrive;
 import java.util.Random;
 import java.util.ArrayList;
-
-public class Student extends SimulationDrive {
+//Use interface since it help seperate what a class does from how it does it.
+public class Student implements StudentInterface {
     private char option; //multiple choice, 1 option
     private String tfoption; //1. right 2. wrong
     private String name;
     private String IDnumber;
     ArrayList Choices=new ArrayList(); //for q with multiple choices
-
 
     public void createID(){ //generate a random ID of 6 digits
         Random num=new Random();
